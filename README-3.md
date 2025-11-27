@@ -1,54 +1,107 @@
-# Expense Tracker
+# Smart Expense Tracker (CLI)
 
-## Overview
-Expense Tracker is a simple Python console application designed to help users efficiently record, view, and analyze personal expenses. The app is beginner-friendly, focusing on category-based tracking and instant summary reporting.
+## Project Title
+Smart Expense Tracker – Budget, Savings, and Spending Insights
+
+## Overview of the Project
+
+Smart Expense Tracker is a Python console application that helps users record daily expenses, see where their money is going, and understand whether they are staying within a monthly budget. It goes beyond a simple total-expense calculator by providing category-wise summaries, highest-spending category insight, and a basic savings view based on monthly income.
+
+This project is designed for an Introduction to Problem Solving & Programming course and showcases modular programming, data structures (lists and dictionaries), loops, conditionals, and simple input validation.
 
 ## Features
-- Add new expenses with amount and category (Food, Travel, Shopping, Bills, Others)
-- View all recorded expenses as a list
-- Calculate total expenses instantly
-- Get a breakdown of expenses by category
-- Easy-to-use menu interface
 
-## Technologies/Tools Used
-- Python 3.x (No external packages required)
+- Add new expenses with amount, category, and an optional note.
+- View all recorded expenses in a clean, numbered list.
+- Calculate total expenses across all entries.
+- Category-wise summary showing how much was spent in each category.
+- Highlight of the highest spending category (“You are spending the most on …”).
+- Set and view a monthly budget with automatic alerts:
+  - Warning when spending crosses 80% of budget.
+  - Warning when spending exceeds the budget.
+- Enter monthly income and view savings (income − total expenses) with simple feedback messages.
+- Menu-driven interface with basic validation for safer input.
+
+## Technologies / Tools Used
+
+- **Language:** Python 3.x  
+- **Environment:** Any Python-capable IDE or terminal (VS Code, PyCharm, IDLE, command prompt/terminal)  
+- **Data Handling:** In-memory lists and dictionaries (no external database)  
 
 ## Steps to Install & Run the Project
-1. Download or clone the repository from GitHub:
-   ```
-   https://github.com/Sanjay2528/expense-tracker.git
-   ```
-2. Navigate into the project directory:
-   ```
-   cd expense-tracker
-   ```
-3. Ensure you have Python 3 installed on your computer.
+
+1. **Install Python 3**  
+   - Download from the official Python website and complete installation.  
+   - Confirm installation in terminal/command prompt:
+     ```
+     python --version
+     ```
+     or
+     ```
+     python3 --version
+     ```
+
+2. **Clone or download this repository**
+3. 
+3. **Run the program**
+
+
+
+
+
+4. **Use the menu**
+- Choose from options like:
+  - Add Expense  
+  - View All Expenses  
+  - Total Expenses  
+  - Category Summary  
+  - Set / View Monthly Budget  
+  - Enter Income & View Savings  
+  - Exit  
 
 ## Instructions for Testing
-1. Run the program with:
-   ```
-   python expense_tracker.py
-   ```
-2. Use the menu to:
-   - Add several expenses in different categories
-   - View all expenses and confirm correct entries
-   - Check total and category-wise summaries for accuracy
-3. Experiment with invalid menu inputs and non-numeric amounts to verify error handling.
 
-## Repository Structure
-```
-/expense_tracker.py          # Main application file
-/README.md                   # Project documentation
-/screenshots/                # Example screenshots of the app
-/statement.md                # Problem statement & scope
-/Project_Report.pdf          # Full report (for course submission)
-```
+Try the following scenarios to test all features:
 
+- **Test 1: Basic expense entry**
+- Add 3–4 expenses in different categories (Food, Travel, Bills, Others).
+- View all expenses and check that each entry is listed with amount, category, and note.
 
+- **Test 2: Total expenses**
+- After adding several expenses, choose “Total Expenses”.
+- Manually add the values and confirm the total printed by the program is correct.
 
+- **Test 3: Category summary + top category**
+- Add multiple expenses in at least two categories.
+- Use “Category Summary” and confirm:
+ - Each category total is correct.
+ - The “You are spending the most on …” line points to the correct category.
 
+- **Test 4: Budget and alerts**
+- Set a monthly budget (for example, 1000).
+- Add expenses so that:
+ - Total crosses 800 but stays below 1000 – expect 80% warning.
+ - Total crosses 1000 – expect “exceeded budget” warning.
 
+- **Test 5: Income and savings**
+- Enter a monthly income (for example, 5000).
+- Check different cases:
+ - Total expenses < income → positive savings message.
+ - Total expenses = income → break-even message.
+ - Total expenses > income → overspending message.
 
+- **Test 6: Invalid input handling**
+- Try entering non-numeric amount, negative amount, or blank category.
+- Program should show an error and not crash.
 
+## Screenshots (Optional but Recommended)
 
+Create a `screenshots` folder and include images such as:
 
+- `menu.png` – main menu of the program.
+- `add_expense.png` – adding an expense with note.
+- `category_summary.png` – category-wise summary with highest spending category line.
+- `budget_warning.png` – when crossing 80% or exceeding the budget.
+- `savings_view.png` – income and savings output.
+
+You can reference these screenshots in your project report to demonstrate functionality and test results.
