@@ -42,11 +42,8 @@ This project is designed for an Introduction to Problem Solving & Programming co
      ```
 
 2. **Clone or download this repository**
-3. 
+  https://github.com/Sanjay2528/Expense_tracker.git 
 3. **Run the program**
-
-
-
 
 
 4. **Use the menu**
@@ -93,15 +90,3 @@ Try the following scenarios to test all features:
 - **Test 6: Invalid input handling**
 - Try entering non-numeric amount, negative amount, or blank category.
 - Program should show an error and not crash.
-
-## Screenshots (Optional but Recommended)
-
-Create a `screenshots` folder and include images such as:
-
-- `menu.png` – main menu of the program.
-- `add_expense.png` – adding an expense with note.
-- `category_summary.png` – category-wise summary with highest spending category line.
-- `budget_warning.png` – when crossing 80% or exceeding the budget.
-- `savings_view.png` – income and savings output.
-
-You can reference these screenshots in your project report to demonstrate functionality and test results.
